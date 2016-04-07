@@ -15,7 +15,7 @@
 
 			<div>
 				<label for="full-name">Full Name</label>
-				<input type="text" id="full-name" required>
+				<input type="text" id="full-name" required placeholder="John Citizen">
 			</div>	
 
 			<div>
@@ -30,7 +30,7 @@
 
 			<div>
 				<label for="website">Your Website</label>
-				<input type="url" id="website">
+				<input type="url" id="website" value="http://www.">
 			</div>
 
 			<div>
@@ -43,6 +43,55 @@
 				<input type="date" id="date">
 			</div>
 
+			<div>
+				<label for="country">Your Country</label>
+				<select name="country" id="country">
+					<option value="">Please select...</option> <!-- To ensure they actually select a country -->
+					<optgroup label="Oceania"> <!-- make sub groups-->
+						<option value="nz">New Zealand</option>
+						<option value="au">Australia</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="us">United States of America</option>
+						<option value="uk">United Kingdom</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div>
+				<input type="radio" id="male" name="gender">  <!-- name="gender" means you can only select one of these -->
+				<label for="male">Male</label>
+			</div>
+
+			<div>
+				<input type="radio" id="female" name="gender">
+				<label for="female">Female</label>
+			</div>
+
+			<div>
+				<input type="radio" id="other" name="gender">
+				<label for="other">Other</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="remember" checked> <!-- checked means checked by default ie opt in passive acceptance -->
+				<label for="remember">Remember login</label>
+			</div>
+
+			<div>
+				<label for="post">Blog Post</label>
+				<textarea name="post" id="post" cols="30" rows="10"></textarea>
+			</div>
+
+			<div>
+				<label for="search">Search</label>
+				<input type="search" id="search">
+
+			</div>
+
+			<div>
+				<progress max="100" value="10"></progress>	
+			</div>
 
 
 			<input type="submit">	
